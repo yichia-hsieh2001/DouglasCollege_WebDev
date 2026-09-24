@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*
+   Basic CSS Assignment — Weekend at the Roastery
+   Author: James, Hsieh
+   Date:   September 21, Fall 2026
+   Filename: roastery.css
+*/
+
+/* Page colors and font */
+body {
+  background-color: rgb(235, 225, 220);
+  color: rgb(74, 60, 50);
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color: rgb(46, 28, 18);
+  color: white;
+  text-align: center;
+  padding: 0.5em 0; /* 0.5 top and bottom, 0 left and right */
+}
+
+.tagline {
+  font-style: italic;
+  color: rgb(180, 147, 123);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.2em;
+  letter-spacing: 0.08em;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: rgb(120, 75, 45);
+  border-bottom: 2px solid rgb(150, 95, 55);
+}
+
+/* Schedule list */
+ul.schedule {
+  list-style-type: square;
+}
+
+/* 7. Bring list */
+ul.bring {
+  list-style-type: circle;
+}
+
+a {
+  color: rgb(10, 165, 165);
+  text-decoration: none;
+}
+
+/* Hover color */
+a:hover {
+  color: rgb(170, 90, 55);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: rgb(59, 38, 26);
+  color: white;
+  padding: 2em 0;
+}
