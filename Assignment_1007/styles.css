@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/* Vancouver Attractions - beginner HTML and CSS project */
+
+/* Colours */
+
+body {
+  color: rgb(48, 65, 68);
+  background-color: hsl(185, 22%, 94%);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+header {
+  color: white;
+  background-color: rgb(38, 105, 112);
+}
+
+nav {
+  color: white;
+  background-color: hsl(187, 42%, 24%);
+}
+
+main {
+  background-color: white;
+}
+
+aside {
+  color: rgb(48, 65, 68);
+  background-color: hsl(170, 25%, 90%);
+}
+
+footer {
+  color: white;
+  background-color: rgb(35, 78, 82);
+}
+
+/* Headings */
+
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 2.4em;
+  text-align: center;
+  margin: 0;
+  padding: 30px 20px 10px 20px;
+}
+
+header p {
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0 20px 30px 20px;
+}
+
+nav h2 {
+  font-size: 1.2em;
+  margin: 0 0 20px 0;
+}
+
+article h2 {
+  color: white;
+  background-color: teal;
+  font-size: 1.3em;
+  padding: 8px 12px;
+  margin: 0 0 15px 0;
+}
+
+aside h2 {
+  color: rgb(35, 78, 82);
+  font-size: 1.3em;
+  margin: 0 0 20px 0;
+}
+
+/* Layout */
+
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+nav,
+main,
+aside {
+  float: left;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 20%;
+  padding: 25px 15px;
+}
+
+main {
+  width: 55%;
+  padding: 30px;
+}
+
+aside {
+  width: 25%;
+  padding: 25px;
+}
+
+.wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+article {
+  margin: 0 0 40px 0;
+}
+
+article p {
+  margin: 0 0 15px 0;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  border: 1px solid rgb(190, 205, 205);
+}
+
+.tips {
+  padding: 0 0 0 30px;
+  list-style-type: square;
+}
+
+.tips li {
+  margin: 0 0 10px 0;
+}
+
+aside blockquote {
+  quotes: "\201C" "\201D";
+  margin: 0 0 25px 0;
+  padding: 12px;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+aside blockquote::before {
+  content: open-quote;
+  color: teal;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+aside blockquote::after {
+  content: close-quote;
+  color: teal;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* Nav */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 0 8px 0;
+}
+
+nav a {
+  display: block;
+  padding: 9px;
+  text-decoration: none;
+}
+
+nav a:link {
+  color: white;
+  background-color: hsl(187, 42%, 24%);
+}
+
+nav a:visited {
+  color: hsl(170, 25%, 82%);
+  background-color: hsl(187, 42%, 24%);
+}
+
+nav a:hover {
+  color: rgb(35, 78, 82);
+  background-color: hsl(170, 35%, 82%);
+}
+
+nav a:active {
+  color: white;
+  background-color: teal;
+}
+
+main a:link {
+  color: rgb(30, 105, 110);
+  font-weight: bold;
+}
+
+main a:visited {
+  color: rgb(50, 90, 95);
+}
+
+main a:hover {
+  color: teal;
+}
+
+main a:active {
+  color: rgb(35, 78, 82);
+}
+
+/* Footer */
+
+footer {
+  clear: both;
+  text-align: center;
+  font-variant: small-caps;
+  padding: 20px;
+}
+
+footer address {
+  font-style: normal;
+}
