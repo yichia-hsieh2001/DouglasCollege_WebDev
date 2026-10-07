@@ -1,12 +1,13 @@
 @charset "utf-8";
 
-/* Vancouver Attractions - beginner HTML and CSS project */
+/* Vancouver Attractions
+   Multi-page beginner HTML and CSS website */
 
 /* Colours */
 
 body {
-  color: rgb(48, 65, 68);
-  background-color: hsl(185, 22%, 94%);
+  color: rgb(50, 66, 68);
+  background-color: hsl(180, 18%, 94%);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6em;
   margin: 0;
@@ -14,12 +15,12 @@ body {
 
 header {
   color: white;
-  background-color: rgb(38, 105, 112);
+  background-color: rgb(42, 105, 110);
 }
 
 nav {
   color: white;
-  background-color: hsl(187, 42%, 24%);
+  background-color: rgb(39, 73, 76);
 }
 
 main {
@@ -27,13 +28,30 @@ main {
 }
 
 aside {
-  color: rgb(48, 65, 68);
-  background-color: hsl(170, 25%, 90%);
+  background-color: hsl(165, 25%, 91%);
 }
 
 footer {
   color: white;
-  background-color: rgb(35, 78, 82);
+  background-color: rgb(39, 73, 76);
+}
+
+/* Different page colours */
+
+.downtown-page header {
+  background-color: rgb(48, 104, 122);
+}
+
+.stanley-page header {
+  background-color: rgb(54, 105, 82);
+}
+
+.granville-page header {
+  background-color: hsl(175, 38%, 36%);
+}
+
+.waterfront-page header {
+  background-color: rgb(42, 94, 112);
 }
 
 /* Headings */
@@ -41,19 +59,19 @@ footer {
 h1,
 h2 {
   font-family: Georgia, "Times New Roman", serif;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2.5em;
   text-align: center;
+  line-height: 1.2em;
   margin: 0;
-  padding: 30px 20px 10px 20px;
+  padding: 32px 20px 10px 20px;
 }
 
 header p {
   text-align: center;
-  font-size: 1em;
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0 20px 30px 20px;
@@ -61,19 +79,19 @@ header p {
 
 nav h2 {
   font-size: 1.2em;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 }
 
 article h2 {
   color: white;
-  background-color: teal;
+  background-color: rgb(46, 125, 125);
   font-size: 1.3em;
-  padding: 8px 12px;
-  margin: 0 0 15px 0;
+  padding: 9px 12px;
+  margin: 0 0 17px 0;
 }
 
 aside h2 {
-  color: rgb(35, 78, 82);
+  color: rgb(38, 85, 85);
   font-size: 1.3em;
   margin: 0 0 20px 0;
 }
@@ -82,7 +100,7 @@ aside h2 {
 
 .container {
   width: 92%;
-  max-width: 1100px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -98,18 +116,18 @@ aside {
 }
 
 nav {
-  width: 20%;
-  padding: 25px 15px;
+  width: 19%;
+  padding: 27px 15px;
 }
 
 main {
-  width: 55%;
+  width: 57%;
   padding: 30px;
 }
 
 aside {
-  width: 25%;
-  padding: 25px;
+  width: 24%;
+  padding: 27px 22px;
 }
 
 .wrapper::after {
@@ -119,49 +137,65 @@ aside {
 }
 
 article {
-  margin: 0 0 40px 0;
+  margin: 0 0 42px 0;
 }
 
 article p {
-  margin: 0 0 15px 0;
+  margin: 0 0 16px 0;
 }
+
+.intro {
+  padding: 0 0 10px 0;
+}
+
+.next-place {
+  background-color: hsl(180, 22%, 95%);
+  padding: 18px;
+}
+
+/* Images */
 
 main img {
   display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 750px;
   margin: 20px auto;
-  border: 1px solid rgb(190, 205, 205);
+  border: 1px solid rgb(180, 200, 200);
 }
 
+/* Lists */
+
 .tips {
-  padding: 0 0 0 30px;
   list-style-type: square;
+  padding: 0 0 0 30px;
 }
 
 .tips li {
   margin: 0 0 10px 0;
 }
 
+/* Quotes */
+
 aside blockquote {
   quotes: "\201C" "\201D";
-  margin: 0 0 25px 0;
-  padding: 12px;
   font-style: italic;
   line-height: 1.5em;
+  margin: 25px 0;
+  padding: 12px;
+  background-color: white;
 }
 
 aside blockquote::before {
   content: open-quote;
   color: teal;
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: bold;
 }
 
 aside blockquote::after {
   content: close-quote;
   color: teal;
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: bold;
 }
 
@@ -185,17 +219,15 @@ nav a {
 
 nav a:link {
   color: white;
-  background-color: hsl(187, 42%, 24%);
 }
 
 nav a:visited {
-  color: hsl(170, 25%, 82%);
-  background-color: hsl(187, 42%, 24%);
+  color: hsl(175, 22%, 78%);
 }
 
 nav a:hover {
-  color: rgb(35, 78, 82);
-  background-color: hsl(170, 35%, 82%);
+  color: rgb(39, 73, 76);
+  background-color: hsl(168, 30%, 82%);
 }
 
 nav a:active {
@@ -203,21 +235,31 @@ nav a:active {
   background-color: teal;
 }
 
+/* Main links */
+
+main a {
+  text-decoration: none;
+}
+
 main a:link {
-  color: rgb(30, 105, 110);
-  font-weight: bold;
+  color: rgb(31, 110, 115);
 }
 
 main a:visited {
-  color: rgb(50, 90, 95);
+  color: rgb(48, 91, 95);
 }
 
 main a:hover {
   color: teal;
+  text-decoration: underline;
 }
 
 main a:active {
-  color: rgb(35, 78, 82);
+  color: rgb(35, 75, 80);
+}
+
+.more-link {
+  font-weight: bold;
 }
 
 /* Footer */
@@ -227,6 +269,10 @@ footer {
   text-align: center;
   font-variant: small-caps;
   padding: 20px;
+}
+
+footer p {
+  margin: 0 0 4px 0;
 }
 
 footer address {
